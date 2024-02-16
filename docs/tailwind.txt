@@ -1,0 +1,16 @@
+https://nuxt.com/modules
+
+tailwindcss
+
+# Using npm
+npm install --save-dev @nuxtjs/tailwindcss
+
+Add @nuxtjs/tailwindcss to the modules section of nuxt.config.{ts,js}
+
+export default defineNuxtConfig({
+  modules: [
+    '@nuxtjs/tailwindcss'
+  ]
+})
+
+extra tailwind ccs stuff in /assets/css
