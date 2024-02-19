@@ -13,4 +13,7 @@ body {
     .vfy-font1 {
         @apply max-md:text-[10pt] md:text-[12pt];
      }
+     .card {
+        @apply p-3 rounded-md bg-white shadow-md h-full;
+     }
 }
