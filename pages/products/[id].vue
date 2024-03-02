@@ -15,6 +15,9 @@
     // https://fakestoreapi.com/
     // destructuring: fetch the data part of the response and call it product
     const { data:product } = await useFetch(`https://fakestoreapi.com/products/${id}`)
+    if(!product.value){
+        throw createError({ statusCode: 404, message: `Unknown product id ${id}`, fatal: true})
+    }
 
 </script>
 
