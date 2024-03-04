@@ -19,6 +19,15 @@
     // destructuring: fetch the data part of the response and call it product
     const { data:products } = await useFetch('https://fakestoreapi.com/products')
 
+    useHead({
+        title: 'MyBooking Nuxt | Products',
+        meta: [
+            {
+                name: 'description', content: 'All there is to know about products'
+            }
+        ]
+    })
+
 </script>
 
 <style scoped>

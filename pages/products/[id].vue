@@ -1,5 +1,9 @@
 <template>
     <div>
+        <Head>
+            <Title>MyBooking Nuxt {{ id }} | {{ product.title }}</Title>
+            <Meta name="description" :content="product.description" />
+        </Head>
         <div>Product details for {{ id }}</div>
         <div>biba = bitterbal</div>
         <ProductDetails :product="product" />
