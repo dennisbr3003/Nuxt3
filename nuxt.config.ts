@@ -14,5 +14,11 @@ export default defineNuxtConfig({
         {rel: 'stylesheet', href:'https://fonts.googleapis.com/icon?family=Material+Icons'}
       ]
     }
+  },
+  runtimeConfig: {
+    testKey: process.env.TEST, // useable server only
+    public: {
+      otherKey: process.env.TEST // useable in front-end and server
+    }
   }
 })
